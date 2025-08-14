@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>🚀 Pharos Testnet</h2>
+        </div>
+        
+        <div class="progress-section">
+            <div class="progress-info">
+                <span class="label">Progress:</span>
+                <span id="percentage" class="percentage">--</span>
+            </div>
+            
+            <div class="progress-bar-container">
+                <div id="progressBar" class="progress-bar">
+                    <div id="progressFill" class="progress-fill"></div>
+                </div>
+            </div>
+            
+            <div class="level-info">
+                <span class="label">Level:</span>
+                <span id="level" class="level">--</span>
+            </div>
+        </div>
+        
+        <div class="status" id="status">
+            Click to refresh data
+        </div>
+        
+        <button id="refreshBtn" class="refresh-btn">🔄 Refresh</button>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>

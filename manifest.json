@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Pharos Testnet Progress Tracker",
+  "version": "1.0",
+  "description": "Shows Pharos Testnet completion percentage",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ],
+  "action": {
+    "default_popup": "public/popup.html",
+    "default_title": "Pharos Testnet Progress"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "16": "assets/icon16.png",
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png"
+  }
+}
