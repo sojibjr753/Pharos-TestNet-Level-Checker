@@ -12,13 +12,13 @@
     "http://*/*"
   ],
   "action": {
-    "default_popup": "public/popup.html",
+    "default_popup": "html/popup.html",
     "default_title": "Pharos Testnet Progress"
   },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["src/content.js"],
+      "js": ["js/content.js"],
       "run_at": "document_end"
     }
   ],
